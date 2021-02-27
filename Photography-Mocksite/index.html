@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+</head>
+<body>
+    <nav class="nav-bar">
+        <button class="nav-button" onclick="displayDropdown()"><span class="nav-button-line"></span></button>
+        <h1 class="nav-logo">Photography</h1>
+        <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="portfolio-selection">
+            <a href="#" class="portfolio portfolio-1"><h3 class="portfolio-name">Nature</h3></a>
+            <a class="portfolio portfolio-2" href="#" title="PETS"><h3 class="portfolio-name">Pets</h3></a>
+            <a href="#" class="portfolio portfolio-3"><h3 class="portfolio-name">Portraits</h3></a>
+            <a href="#" class="portfolio portfolio-4"><h3 class="portfolio-name">Textures</h3></a>
+        </div>
+    </div>
+    <div class="call-to-action">
+        <div class="container">
+            <h2 class="call-to-action-title">Call To Action</h2>
+            <p class="call-to-action-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam earum deleniti doloribus tenetur nesciunt quod eum ab. Suscipit quam odio iste perspiciatis facilis delectus mollitia cupiditate natus! Totam, harum dolorum?</p>
+            <button class="call-to-action-button">Free Consultation</button>
+        </div>
+        <div class="container-2">
+            <div class="container-circle"></div>
+        </div>
+    </div>
+
+    <div class="email-list">
+        <h2 class="email-list-title">Subscribe to our email list</h2>
+        <form action="" method="POST" class="email-list-form">
+                <div class="container">
+                    <div class="">
+                        <label for="name" class="label name-label">Name:</label>
+                        <input type="text" id="name"class="input name-input" name="user_name" required>
+                    </div>
+                    <div class="">
+                        <label for="email" class="label email-label">Email:</label>
+                        <input type="text" id="email" class="input email-input" id="email" name="user_email" required>
+                    </div>
+                    <div class="">
+                        <label for="fav-content-input" class="fav-content">I love your
+                        <select name="interests" id="fav-content-input" class="email-selection name="user_fav_content">
+                            <option value="Pets">Pets</option> 
+                            <option value="Nature">Nature</option>
+                            <option value="Portraits">Portraits</option>
+                            <option value="Textures">Textures</option>
+                        </select>
+                        collection. 
+                        </label>
+                    </div>
+                    <div class="">
+                        <label for="message" class="label message-label">Feel free to send a message:</label>
+                        <textarea id="message" class="input message-input" name="user_message"></textarea>
+                    </div>
+                </div>
+                <button class="email-list-button" type="submit">Join Now</button>
+            
+        </form>
+    </div>
+</body>
+<footer class="footer">
+    Copyright &copy 2020
+    <ul class="icons">
+        <li class="fa fa-facebook"></li>
+        <li class="fa fa-twitter"></li>
+        <li class="fa fa-reddit"></li>
+    </ul>
+</footer>
+</html>
+<script src="scripts/index.js"></script>
