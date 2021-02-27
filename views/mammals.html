@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../styles/index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script defer src="../scripts/index.js"></script>
+    </head>
+    <body>
+        <!-- All the info pages have the same layout, we used classes in order to 
+        have one css ruleset to style every page.  -->
+        <div class="first">
+            <nav class="nav">
+                <a href="./index.html"><h1 class="nav--title">Fish R' US</h1></a>
+                <ul class="nav--list">
+                    <li class="nav--item"><a href="./fish.html" class="nav--link">Fish</a></li>
+                    <li class="nav--item"><a href="./invertebrates.html" class="nav--link">Marine Invertebrates</a></li>
+                    <li class="nav--item"><a href="./mammals.html" class="nav--link">Marine Mammals</a></li>
+                </ul>
+            </nav>
+            <div class="display">
+                <div class = "display-info">
+                    <h2 class="info-name">Blue Whale</h2>
+                    <p class="info-text">The blue whale (Balaenoptera musculus) is a marine mammal belonging to the baleen whale suborder Mysticeti. Reaching a maximum confirmed length of 29.9 meters (98 feet) and weight of 173 tonnes (190 tons), it is the largest animal known to have ever existed. The blue whale’s long and slender body can be various shades of grayish-blue dorsally and somewhat lighter underneath.</p>
+                    <h2 class="info-nextstep">Find Out More</h2>
+                    <ul class="info-list">
+                        <li class="info-item">
+                            <!-- Always going to be where we obtained the photo -->
+                            <span>Photo by <a href="https://unsplash.com/@toddcravens?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Todd Cravens</a> on <a href="https://unsplash.com/s/photos/whale?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+                        </li>
+                        <li class="info-item">
+                            <!-- Always going to be where we obtained the information -->
+                            <a href="https://en.wikipedia.org/wiki/Blue_whale" class="info-link">Information from Wikipedia</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Use the 350w version for the display -->
+                <img id = "display-picture" src="../pictures/blue-whale-350w.jpg" alt="thresher shark swimming">
+
+            </div>
+        </div>
+        <div class="select">
+            <div id="blue-whale" class="select-card" onclick="button(event)">
+                <!-- Use the 150 px wide version for the cards -->
+                <img src="../pictures/blue-whale-150w.jpg" alt="blue whale breaching the surface" class="card-picture">
+                <h2  class="card-name"> Blue Whale</h2>
+            </div>
+            <div id="sealion" class="select-card" onclick="button(event)">
+                <img src="../pictures/sea-lion-150w.jpg" alt="a colony of sea lions resting on the rocks" class="card-picture">
+                <h2  class="card-name"> Sea Lion</h2>
+            </div>
+            <div id="dolphin" class="select-card" onclick="button(event)">
+                <img src="../pictures/dolphin-150w.jpg" alt="A happy dolphin looking at something " class="card-picture">
+                <h2  class="card-name">Bottlenose Dolphin </h2>
+            </div>
+
+        </div>
+
+        
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </body>
+
+<footer class="page-footer font-small blue footer">
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="index.html"> FishRUs.com</a>
+    </div>
+      
+</footer>
+
+</html>
